@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+
+incomming message: 99965536 was 65536
+
+
+// Create requested metadata xml                
+//string xmlRequestedMetadata = "<ishfields>" + "<ishfield name='USERNAME' level='none'/>" + "<ishfield name='FISHUSERDISPLAYNAME' level='none'/>" + "<ishfield name='FISHEMAIL' level='none'/>" + "<ishfield name='FUSERGROUP' level='none'/>" + "<ishfield name='FISHUSERROLES' level='none' ishvaluetype='element'/>" + "<ishfield name='FISHEXTERNALID' level='none'/>" + "</ishfields>";
+
+
+
+
+//Console.WriteLine(xmlRequestedMetadata);
+// Execute the GetMyMetadata call
+//string xmlObjectList = userClient.GetMyMetadata(xmlRequestedMetadata);
+//Console.WriteLine(xmlObjectList);                
+                
+                
+//string[] ids = { "GUID-385E4113-E788-48F1-AA17-D476B786776D"}; //topic bluetooth released
+//string[] ids = { "GUID-219B85D9-CA7B-48BA-B09D-5CDEE48BE8D2"}; //library companyname kelly
+
+
+//string[] ids = { "GUID-202A7E14-8311-4984-BD1C-67E97C4A55BB"}; //released library
+
+//string[] ids = { "GUID-C1850A8D-6E00-4ED6-A28C-38657FBDB252" }; //topic cover in draft
+
+//string[] ids = { "GUID-C1BC867A-B600-48F3-BDC8-DA0F1ED4BC1A" }; //img draft
+
+//docObj.GetMetadata("GUID-9637F419-5935-4BC7-91D4-934649D568AD", ref obj_ver,out meta_outstr, "en", "", "");               
+                //Console.WriteLine(">>>>" + meta_outstr);
+                
+
+-->

@@ -1,0 +1,24 @@
+<label quantity="1" printername="OQ_Test_220xi4_2">
+  <variable name="WORKORDERNO">59599391</variable>
+  <variable name="PARTNO">693803126</variable>
+  <variable name="PARTDESCRIPTION">PKG ASSY, INTRO ESHEATH,18F</variable>
+  <variable name="LABELSETCODE">867830001</variable>
+  <variable name="REVISION">B</variable>
+  <variable name="BRANCH">UT02</variable>
+  <variable name="SRTX">918ES26</variable>
+  <variable name="LABELQUANTITY">1</variable>
+  <variable name="EXPIRATIONDATE">09/12/2015</variable>
+  <variable name="EXPIRATIONDAY">12</variable>
+  <variable name="EXPIRATIONMONTH">09</variable>
+  <variable name="EXPIRATIONYEAR">2015</variable>
+  <variable name="SHELFLIFEDAYS">730</variable>
+  <variable name="EARLIESTITEMEXPIRYDATE">09/12/2015</variable>
+  <variable name="USER_ID">BMONTGOMER</variable>
+  <variable name="WORKSTATION">IRVJDEWL03</variable>
+  <variable name="DATELABELGENERATED">09/12/2013</variable>
+  <variable name="TIMELABELGENERATED">95520</variable>
+  <variable name="EXPIRATIONDATE_EU">12SEP2015</variable>
+  <variable name="SCREENUSED">W58THV01C</variable>
+  <variable name="OPERATOR">JDEINTERFACE</variable>
+  <variable name="LEGAL_NOTE_IMG_PNG" id="GUID-ty3grgb3 1h35hj">filename.png</variable>
+</label>

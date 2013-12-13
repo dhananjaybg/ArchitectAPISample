@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://sdl.com/trisoft/2012/06/WebServices/Services/API25/" elementFormDefault="qualified" targetNamespace="http://sdl.com/trisoft/2012/06/WebServices/Services/API25/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://sdldemo2013/InfoShareWS/Wcf/API25/DocumentObj.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://sdldemo2013/InfoShareWS/Wcf/API25/DocumentObj.svc?xsd=xsd4" namespace="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" />
+  <xs:element name="GetMetadataByIshLngRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lngRef" type="xs:long" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetadataByIshLngRefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="language" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resolution" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMetadataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveMetadataByIshLngRefs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lngRefs" nillable="true" type="q1:ArrayOflong" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveMetadataByIshLngRefsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveVersionMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="logicalIds" nillable="true" type="q2:ArrayOfstring" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveVersionMetadataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataObjectInfoByIshLngRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lngRef" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataObjectInfoByIshLngRefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlIshDataObjects" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveDataObjectInfoByIshLngRefs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lngRefs" nillable="true" type="q3:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveDataObjectInfoByIshLngRefsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlIshDataObjects" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveObjects">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="logicalIds" nillable="true" type="q4:ArrayOfstring" />
+        <xs:element xmlns:q5="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q5:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlProductDefinition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveObjectsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveObjectsByIshLngRefs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lngRefs" nillable="true" type="q6:ArrayOflong" />
+        <xs:element minOccurs="0" name="xmlProductDefinition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveObjectsByIshLngRefsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveObjectsByRevisionIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="revisionIds" nillable="true" type="q7:ArrayOfstring" />
+        <xs:element minOccurs="0" name="xmlProductDefinition" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveObjectsByRevisionIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveRevisionInfoByIshLngRefs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lngRefs" nillable="true" type="q8:ArrayOflong" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveRevisionInfoByIshLngRefsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FolderLocations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="logicalIds" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FolderLocationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjLocationList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Find">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ishTypeFilter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q10:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="logicalIds" nillable="true" type="q11:ArrayOfstring" />
+        <xs:element xmlns:q12="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q12:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveMetadataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveLanguageMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="logicalIds" nillable="true" type="q13:ArrayOfstring" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="languages" nillable="true" type="q14:ArrayOfstring" />
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="resolutions" nillable="true" type="q15:ArrayOfstring" />
+        <xs:element xmlns:q16="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q16:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveLanguageMetadataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FolderLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FolderLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="baseFolder" type="q17:BaseFolder" />
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="folderPath" nillable="true" type="q18:ArrayOfstring" />
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="folderRefs" nillable="true" type="q19:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContainingLogicalId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="linkType" type="q20:LinkType" />
+        <xs:element minOccurs="0" name="ishTypeFilter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q21:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContainingLogicalIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParentsByIshLngRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lngRef" type="xs:long" />
+        <xs:element xmlns:q22="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="linkType" type="q22:LinkType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParentsByIshLngRefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContainingCondition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="conditionName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="conditionValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ishTypeFilter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q23:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContainingConditionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContainingVariable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="variable" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ishTypeFilter" nillable="true" type="xs:string" />
+        <xs:element xmlns:q24="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="statusFilter" type="q24:StatusFilter" />
+        <xs:element minOccurs="0" name="xmlMetadataFilter" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlRequestedMetadata" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContainingVariableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="linkType" type="q25:LinkType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlObjectList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChildren">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lngRef" type="xs:long" />
+        <xs:element xmlns:q26="http://sdl.com/trisoft/2012/06/WebServices/Contracts/Enumerations/API25/" minOccurs="0" name="linkType" type="q26:LinkType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChildrenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="logicalIds" nillable="true" type="q27:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPossibleTargetStatuses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="language" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resolution" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPossibleTargetStatusesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmlLovValueList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPossibleTargetStatusesByIshLngRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lngRef" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPossibleTargetStatusesByIshLngRefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlLovValueList" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReuseStartedOn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="logicalId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="versionNumber" nillable="true" type="xs:string" />
+        <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="reusableObjectLogicalIds" nillable="true" type="q28:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReuseStartedOnResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

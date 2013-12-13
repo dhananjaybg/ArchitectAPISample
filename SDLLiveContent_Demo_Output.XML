@@ -1,0 +1,31 @@
+<label quantity="1" printername="OQ_Test_220xi4_2">
+  <variable name="WORKORDERNO">59599391</variable>
+  <variable name="PARTNO">693803126</variable>
+  <variable name="PARTDESCRIPTION">PKG ASSY, INTRO ESHEATH,18F</variable>
+  <variable name="LABELSETCODE">867830001</variable>
+  <variable name="REVISION">B</variable>
+  <variable name="BRANCH">        UT02</variable>
+  <variable name="SRTX">918ES26</variable>
+  <variable name="LABELQUANTITY">1</variable>
+  <variable name="EXPIRATIONDATE">09/12/2015</variable>
+  <variable name="EXPIRATIONDAY">12</variable>
+  <variable name="EXPIRATIONMONTH">09</variable>
+  <variable name="EXPIRATIONYEAR">2015</variable>
+  <variable name="SHELFLIFEDAYS">730</variable>
+  <variable name="EARLIESTITEMEXPIRYDATE">09/12/2015</variable>
+  <variable name="USER_ID">BMONTGOMER</variable>
+  <variable name="WORKSTATION">IRVJDEWL03</variable>
+  <variable name="DATELABELGENERATED">09/12/2013</variable>
+  <variable name="TIMELABELGENERATED">95520</variable>
+  <variable name="EXPIRATIONDATE_EU">12SEP2015</variable>
+  <variable name="SCREENUSED">W58THV01C</variable>
+  <variable name="OPERATOR">JDEINTERFACE</variable>
+  <variable name="lblQuantity_Alt">Qty.</variable>
+  <variable name="iQuantity">iQuantity=GUID-ED31F2B5-4FD1-454E-8268-77EAD6556E88=1=en=Low.png</variable>
+  <variable name="lblDoNotFreeze_Alt">Caution: Do not freeze. Store between 10°C and 25°C.</variable>
+  <variable name="iDoNotFreeze">iDoNotFreeze=GUID-CD85FFD7-370F-4375-B5BA-96E7BA3AB212=1=en=Low.png</variable>
+  <variable name="lblEthyleneOxideSterilized_Alt">Sterilized Using Ethylene Oxide</variable>
+  <variable name="iEthyleneOxideSterilized">iEthyleneOxideSterilized=GUID-DE27047A-0DA6-4565-AB9D-620C6337E64C=1=en=Low.png</variable>
+  <variable name="lblDoNotUse">Do not use if package is opened or damaged.</variable>
+  <variable name="iDoNotUse">iDoNotUse=GUID-31102BC1-7ED7-4762-B3B5-9C0C89EB9E11=1=en=Low.png</variable>
+  </label>

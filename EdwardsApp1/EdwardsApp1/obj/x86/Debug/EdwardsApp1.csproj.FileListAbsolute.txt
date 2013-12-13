@@ -1,0 +1,6 @@
+C:\Dev\JDEdwards\EdwardsApp1\EdwardsApp1\bin\Debug\EdwardsApp1.exe.config
+C:\Dev\JDEdwards\EdwardsApp1\EdwardsApp1\bin\Debug\EdwardsApp1.exe
+C:\Dev\JDEdwards\EdwardsApp1\EdwardsApp1\bin\Debug\EdwardsApp1.pdb
+C:\Dev\JDEdwards\EdwardsApp1\EdwardsApp1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dev\JDEdwards\EdwardsApp1\EdwardsApp1\obj\x86\Debug\EdwardsApp1.exe
+C:\Dev\JDEdwards\EdwardsApp1\EdwardsApp1\obj\x86\Debug\EdwardsApp1.pdb

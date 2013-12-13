@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{439A36E5-222F-4FB4-B283-66B5E4AA5227}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EdwardsApp1</RootNamespace>
+    <AssemblyName>EdwardsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Application25ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DocObj25ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\User25ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Application25ServiceReference\Application.wsdl" />
+    <None Include="Service References\Application25ServiceReference\Application.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Application25ServiceReference\Application1.wsdl" />
+    <None Include="Service References\Application25ServiceReference\Application1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Application25ServiceReference\Application2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj.wsdl" />
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj1.wsdl" />
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DocObj25ServiceReference\EdwardsApp1.DocObj25ServiceReference.BaseFolder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\User25ServiceReference\User.wsdl" />
+    <None Include="Service References\User25ServiceReference\User.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\User25ServiceReference\User1.wsdl" />
+    <None Include="Service References\User25ServiceReference\User1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\User25ServiceReference\User2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\User25ServiceReference\User3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\User25ServiceReference\User4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Application25ServiceReference\" />
+    <WCFMetadataStorage Include="Service References\DocObj25ServiceReference\" />
+    <WCFMetadataStorage Include="Service References\User25ServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Application25ServiceReference\Application.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Application25ServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Application25ServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Application25ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\User25ServiceReference\User.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\User25ServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\User25ServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\User25ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input_XML_SAMPLE.XML">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\DocObj25ServiceReference\DocumentObj.disco" />
+    <None Include="Service References\DocObj25ServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\DocObj25ServiceReference\configuration.svcinfo" />
+    <None Include="Service References\DocObj25ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Topic.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
